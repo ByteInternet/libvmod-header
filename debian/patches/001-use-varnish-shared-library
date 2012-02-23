@@ -1,0 +1,16 @@
+Index: libvmod-header/configure.ac
+===================================================================
+--- libvmod-header.orig/configure.ac	2012-02-23 11:25:13.153778473 +0100
++++ libvmod-header/configure.ac	2012-02-23 11:32:18.957863658 +0100
+@@ -51,9 +51,9 @@
+ )
+ 
+ # Check that varnishtest is built in the varnish source directory
+-AC_CHECK_FILE([$VARNISHSRC/bin/varnishtest/varnishtest],
++AC_CHECK_FILE([/usr/bin/varnishtest],
+ 	[],
+-	[AC_MSG_FAILURE([Can't find "$VARNISHSRC/bin/varnishtest/varnishtest". Please build your varnish source directory])]
++	[AC_MSG_FAILURE([Can't find "/usr/bin/varnishtest". Please build your varnish source directory])]
+ )
+ 
+ # vmod installation dir

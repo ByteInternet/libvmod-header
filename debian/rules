@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+export VARNISHSRC=../varnish/
+export CFLAGS=-I../varnish/
+
+%:
+	dh $@ --with autoreconf
+
+override_dh_autoreconf:
+	if [ ! -e ${VARNISHSRC}/varnishapi.pc.in ]; then \
+		 echo "We expect the Varnish 3.0 sources in \"${VARNISHSRC}\"!"; \
+		exit 1; \
+	fi
+	dh_autoreconf
+
+override_dh_auto_test:
+	echo "Tests skipped"

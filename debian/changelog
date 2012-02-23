@@ -1,0 +1,5 @@
+libvarnish-vmod-header (0.3-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Allard Hoeve <allard@byte.nl>  Thu, 23 Feb 2012 11:41:32 +0100
