@@ -3,7 +3,7 @@ Section: web
 Priority: extra
 Maintainer: Allard Hoeve <allard@byte.nl>
 Standards-Version: 3.9.1
-Build-Depends: debhelper (>> 8), libvarnishapi-dev, dh-autoreconf, varnish, pkg-config, python
+Build-Depends: debhelper (>> 8), libvarnishapi-dev (>= 3.0.3), dh-autoreconf, varnish, pkg-config, python
 
 Package: libvarnish-vmod-header
 Architecture: any
